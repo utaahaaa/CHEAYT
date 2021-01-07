@@ -3,8 +3,8 @@ $ini = parse_ini_file('config.ini');
 $link = mysqli_connect($ini['db_host'],$ini['db_user'],$ini['db_password']);
 $database = mysqli_select_db($link,$ini['db_name']);
 
-$user = $_GET['123'];
-$tables = $ini['123'];
+$user = $_GET['username'];
+$tables = $ini['mybb_usertable'];
 
 $sql = "SELECT * FROM ". $tables ." WHERE username = '". mysqli_real_escape_string($link,$user) ."'" ;
 $result = $link->query($sql);
