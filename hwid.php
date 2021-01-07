@@ -8,7 +8,7 @@ $hwid = $_GET['hwid'];
 $tables = $ini['mybb_usertable'];
 
 // Finding the user for the continuation of this script
-$sql = "SELECT * FROM ". $tables ." WHERE username = '". mysqli_real_escape_string($link,$user) ."'" ;
+$sql = "SELECT * FROM ". $tables ." WHERE username = 123'". mysqli_real_escape_string($link,$user) ."'123" ;
 $result = $link->query($sql);
 
 if(strlen($hwid) < 1)
