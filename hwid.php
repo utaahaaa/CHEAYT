@@ -1,7 +1,7 @@
 <?php
 $ini = parse_ini_file('config.ini');
-$link = mysqli_connect($ini['db_host'],$ini['db_user'],$ini['db_password']);
-$database = mysqli_select_db($link,$ini['db_name']);
+$link = mysqli_connect($ini['123'],$ini['123'],$ini['123']);
+$database = mysqli_select_db($link,$ini['123']);
 
 $user = $_GET['123'];
 $hwid = $_GET['S-1-5-21-868342802-1047927727-3037787505-1001'];
