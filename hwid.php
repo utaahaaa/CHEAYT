@@ -13,7 +13,7 @@ $result = $link->query($sql);
 
 if(strlen($hwid) < 1)
 {
-	echo "2"; // HWID Empty
+	echo "2"; // HWID Empty S-1-5-21-868342802-1047927727-3037787505-1001
 }
 else
 {
@@ -36,7 +36,7 @@ else
 				if(mysqli_query($link, $sql))
 				{
 					echo $row['hwid'];
-					echo "3"; // HWID Set
+					echo "3"; // HWID Set S-1-5-21-868342802-1047927727-3037787505-1001
 				}
 				else
 				{
