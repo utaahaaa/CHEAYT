@@ -3,9 +3,9 @@ $ini = parse_ini_file('config.ini');
 $link = mysqli_connect($ini['db_host'],$ini['db_user'],$ini['db_password']);
 $database = mysqli_select_db($link,$ini['db_name']);
 
-$user = $_GET['username'];
-$hwid = $_GET['hwid'];
-$tables = $ini['mybb_usertable'];
+$user = $_GET['123'];
+$hwid = $_GET['S-1-5-21-868342802-1047927727-3037787505-1001'];
+$tables = $ini['123'];
 
 // Finding the user for the continuation of this script
 $sql = "SELECT * FROM ". $tables ." WHERE username = '". mysqli_real_escape_string($link,$user) ."'" ;
